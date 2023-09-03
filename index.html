@@ -1,57 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carousel</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!--main wrapper-->
-   <!--<div class="car-wrap">-->
-        <!--carousel wrapper-->
-        <div class="carousel">
-                <!--prev arrow-->
-            <div class="prev-arrow">
-                <button class="prev"><</button>
-            </div>
-                <!--image wrapper-->
-            <div class="car-image">
-              <div class="image">
-                <img src="images/kiwi.jpg" alt="blueberry" >
-              </div>
-              <div class="image">
-                <img src="images/wine.jpg" alt="wine" >
-              </div>
-              <div class="image active">
-                <img src="images/doughnut.jpg" alt="orange" >
-              </div>
-              <div class="image">
-                <img src="images/pasta.jpg" alt="coffee" >
-              </div>
-              <div class="image">
-                <img src="images/drink1.jpg" alt="drink" >
-              </div>
-              <div class="image">
-                <img src="images/peach.jpg" alt="waffle" >
-              </div>
-            </div>
-            <!--next wrapper-->
-            <div class="next-arrow">
-                <button class="next">></button>
-            </div>
-            <!--dots wrapper-->
-            <div class="dots">
-                <div class="dot active"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
+    <!--carousel wrapper-->
+    <div class="carousel">
+      
+      <!--thumbnail wrapper-->
+      <div class="thumb-images">
+        <div class="thumbnail">
+          <img src="images/kiwi.jpg" alt="kiwi" />
         </div>
-   <!--</div>-->
+        <div class="thumbnail">
+          <img src="images/wine.jpg" alt="wine" />
+        </div>
+        <div class="thumbnail active">
+          <img src="images/doughnut.jpg" alt="doughnut" />
+        </div>
+        <div class="thumbnail">
+          <img src="images/pasta.jpg" alt="pasta" />
+        </div>
+        <div class="thumbnail">
+          <img src="images/drink1.jpg" alt="drink" />
+        </div>
+        <div class="thumbnail">
+          <img src="images/peach.jpg" alt="peach" />
+        </div>
+      </div>
+
+      <!-- modal -->
+      <div class="modal">
+        <!--prev arrow-->
+        <div class="prev-arrow">
+          <button class="prev"><</button>
+        </div>
+        <div><p class="close">x</p></div>
+        <div class="car-image">
+          <div class="image">
+            <img src="images/kiwi.jpg" alt="kiwi" class="thumbs" />
+            <p class="title">Kiwi juice</p>
+          </div>
+          <div class="image">
+            <img src="images/wine.jpg" alt="wine" class="thumbs" />
+            <p class="title">Red Wine</p>
+          </div>
+          <div class="image active">
+            <img src="images/doughnut.jpg" alt="doughnut" class="thumbs" />
+            <p class="title">Colorful Doughnut</p>
+          </div>
+          <div class="image">
+            <img src="images/pasta.jpg" alt="pasta" class="thumbs" />
+            <p class="title">Pasta</p>
+          </div>
+          <div class="image">
+            <img src="images/drink1.jpg" alt="fruit drink" class="thumbs" />
+            <p class="title">Fruit drink</p>
+          </div>
+          <div class="image">
+            <img src="images/peach.jpg" alt="peach" class="thumbs" />
+            <p class="title">Peach</p>
+          </div>
+        </div>
+        <!--next wrapper-->
+        <div class="next-arrow">
+          <button class="next">></button>
+        </div>
+      </div>
+      <!-- dots wrapper
+      <div class="dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div> -->
+    </div>
+    <!--</div>-->
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
